@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:id="@+id/RelativeLayout">
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout">
 
-    <ToggleButton
-        android:id="@+id/toggle"
-        android:padding="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:checked="true"
-        android:textAlignment="center"
-        android:textOff="OFF"
-        android:textOn="RECYCLE"
-        android:textColor="@android:color/holo_green_light"
-        android:textSize="30dp"
-        />
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:checked="true"
+            android:padding="40dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textOff="OFF"
+            android:textOn="RECYCLE"
+            android:textSize="30dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIT"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal" />
+
+    </FrameLayout>
+
+</LinearLayout>
